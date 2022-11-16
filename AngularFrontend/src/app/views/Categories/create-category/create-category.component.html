@@ -1,0 +1,14 @@
+<div class="card mt-4 ps-3" style="width: 27rem;">
+    <h2 class="mt-2">Cadastrar Categoria</h2>
+<div id="Name" class="my-3">
+    <label for="txtName" class="label-group">Nome </label>
+    <input type="text" id="txtName" [(ngModel)]="name"/>
+  </div>
+  <div id="icon" class="my-3">
+    <label for="txticon" class="label-group">Ícone </label>
+    <input type="text" id="txticon" [(ngModel)]="icon" />
+  </div>
+  <div id="botao" class="my-3 d-flex flex-row-reverse">
+    <button *ngIf="!id" id="btnCadastrar"class="btn btn-success me-3"  (click)="create()" >Cadastrar</button>
+  </div>
+</div>

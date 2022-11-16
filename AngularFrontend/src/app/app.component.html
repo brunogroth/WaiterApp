@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="mt-4">WaiterApp</h1>
+  <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+  <nav>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <ul class="list-group">
+          <h4 class="text-center category-title"> Categorias </h4>
+          <a routerLink="category/list-categories" routerLinkActive="active" ariaCurrentWhenActive="page"
+            class="btn btn-primary mb-3">Listar Categorias</a>
+          <a routerLink="category/create-category" routerLinkActive="active" ariaCurrentWhenActive="page"
+            class="btn btn-primary">Criar Categoria</a>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <!-- The routed views render in the <router-outlet>-->
+  <router-outlet></router-outlet>
+</div>
