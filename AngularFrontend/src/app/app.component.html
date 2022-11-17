@@ -13,7 +13,17 @@
         </ul>
       </div>
     </div>
-
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <ul class="list-group">
+          <h4 class="text-center category-title"> Pedidos </h4>
+          <a routerLink="order/list-orders" routerLinkActive="active" ariaCurrentWhenActive="page"
+            class="btn btn-primary mb-3">Listar Pedidos</a>
+          <a routerLink="order/create-order" routerLinkActive="active" ariaCurrentWhenActive="page"
+            class="btn btn-primary">Criar Pedido</a>
+        </ul>
+      </div>
+    </div>
   </nav>
   <!-- The routed views render in the <router-outlet>-->
   <router-outlet></router-outlet>

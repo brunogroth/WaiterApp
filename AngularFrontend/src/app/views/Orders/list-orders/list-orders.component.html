@@ -1,0 +1,17 @@
+<p>list-orders works!</p>
+<table class="table">
+    <tr>
+        <th>Mesa</th>
+        <th>Status</th>
+        <th>test</th>
+    </tr>
+    <tr *ngFor="let order of orders">
+        <td>{{order.table}}</td>
+        <td>{{order.status}}</td>
+        <td>
+            <ul *ngFor="let produto of order['products']">
+                <li>{{produto.name}}</li>
+            </ul>
+        </td>
+    </tr>
+</table>

@@ -12,7 +12,7 @@ import { Category } from 'src/app/models/Category';
 export class ListCategoriesComponent implements OnInit {
   categories!: Category[];
   
-  constructor( private http: HttpClient) {}
+  constructor( private http: HttpClient ) {}
 
   ngOnInit(): void {
     //Configurando a requisição para a API    
