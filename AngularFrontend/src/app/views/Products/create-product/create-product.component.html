@@ -1,0 +1,28 @@
+<div class="card mt-4 ps-3" style="width: 35rem;">
+    <h2 class="mt-2">Cadastrar Produto</h2>
+    <div id="name" class="m-2">
+        <label for="txtname" class="label-group">Nome </label>
+        <input class="form-control" type="text" id="txtname" [(ngModel)]="name" />
+    </div>
+    <div id="description" class="m-2">
+        <label for="txtdescription" class="label-group">Descrição </label>
+        <input class="form-control" type="text" id="txtdescription" [(ngModel)]="description" />
+    </div>
+    <div id="price" class="m-2">
+        <label for="txtprice" class="label-group">Preço </label>
+        <input class="form-control" type="number" id="txtprice" [(ngModel)]="price" />
+    </div>
+    <div id="category" class="m-2">
+        <label for="txtcategory" class="label-group">Categoria </label>
+        <select class="form-select" aria-label="" id="txtcategory" [(ngModel)]="category">
+            <option *ngFor="let categoria of categories" value={{categoria.id}}>{{categoria.name}}</option>
+        </select>
+    </div>
+    <div id="ingredients" class="m-2">
+        <label for="txtingredients" class="label-group">Produtos </label>
+        <h1>Implementar a lista de produtos aqui</h1>
+    </div>
+    <div id="botao" class="m-2 d-flex flex-row-reverse">
+        <button id="btnCadastrar" class="btn btn-success me-3" (click)="create()">Cadastrar</button>
+    </div>
+</div>

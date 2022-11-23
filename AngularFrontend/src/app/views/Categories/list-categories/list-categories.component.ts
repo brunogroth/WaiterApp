@@ -21,7 +21,6 @@ export class ListCategoriesComponent implements OnInit {
     .subscribe({
       next : (categories) => {
         this.categories = categories;
-        console.table(categories);
       }
     });
   }

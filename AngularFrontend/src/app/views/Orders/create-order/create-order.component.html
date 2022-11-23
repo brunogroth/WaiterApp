@@ -1,1 +1,22 @@
-<p>create-order works!</p>
+<div class="card mt-4 ps-3" style="width: 27rem;">
+    <h2 class="mt-2">Cadastrar Pedido</h2>
+<div id="table" class="my-3">
+    <label for="txttable" class="label-group">Mesa </label>
+    <input type="text" id="txttable" [(ngModel)]="table"/>
+  </div>
+  <div id="status" class="my-3">
+    <label for="txtstatus" class="label-group">Status </label>
+    <select class="form-select" aria-label="Default select example" id="txtstatus" [(ngModel)]="status">
+        <option selected value="WAITING">Aguardando</option>
+        <option value="IN_PRODUCTION">Em produção</option>
+        <option value="DONE">Concluído</option>
+      </select>
+  </div>
+  <div id="products" class="my-3">
+    <label for="txtproducts" class="label-group">Produtos </label>
+    <h1>Implementar a lista de produtos aqui</h1>
+  </div>
+  <div id="botao" class="my-3 d-flex flex-row-reverse">
+    <button id="btnCadastrar" class="btn btn-success me-3" (click)="create()" >Cadastrar</button>
+  </div>
+</div>

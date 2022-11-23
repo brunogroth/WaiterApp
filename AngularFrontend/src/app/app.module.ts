@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CreateOrderComponent } from './views/Orders/create-order/create-order.component';
 import { ListOrdersComponent } from './views/Orders/list-orders/list-orders.component';
+import { ListProductComponent } from './views/Products/list-products/list-product.component';
+import { CreateProductComponent } from './views/Products/create-product/create-product.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListCategoriesComponent,
     CreateCategoryComponent,
     CreateOrderComponent,
-    ListOrdersComponent
+    ListOrdersComponent,
+    ListProductComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,

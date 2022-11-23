@@ -1,30 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <a class="navbar-brand ms-4" href="#">WaiterApp</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarCategories" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </a>
+      <div class="dropdown-menu" aria-labelledby="navbarCategories">
+        <a class="dropdown-item" href="#" routerLink="category/list-categories" routerLinkActive="active"
+          ariaCurrentWhenActive="page">Criar Categoria</a>
+        <a class="dropdown-item" routerLink="category/create-category" routerLinkActive="active"
+          ariaCurrentWhenActive="page"> Listar Categorias</a>
+      </div>
+    </li>
+    <!-- Orders -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarOrders" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Pedidos
+      </a>
+    <div class="dropdown-menu" aria-labelledby="navbarOrders">
+      <a class="dropdown-item" href="#" routerLink="order/create-order" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Criar Pedido</a>
+      <a class="dropdown-item" routerLink="order/list-orders" routerLinkActive="active"
+      ariaCurrentWhenActive="page"> Listar Pedidos</a>
+    </div>
+    <!-- Products -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Produtos
+      </a>
+    <div class="dropdown-menu" aria-labelledby="navbarProducts">
+      <a class="dropdown-item" href="#" routerLink="product/create-product" routerLinkActive="active"
+        ariaCurrentWhenActive="page">Criar Produto</a>
+      <a class="dropdown-item" routerLink="product/list-products" routerLinkActive="active"
+      ariaCurrentWhenActive="page"> Listar Produto</a>
+    </div>
+  </li>
+  </ul>
+  </div>
+</nav>
 <div class="container">
-  <h1 class="mt-4">WaiterApp</h1>
   <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-  <nav>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <ul class="list-group">
-          <h4 class="text-center category-title"> Categorias </h4>
-          <a routerLink="category/list-categories" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="btn btn-primary mb-3">Listar Categorias</a>
-          <a routerLink="category/create-category" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="btn btn-primary">Criar Categoria</a>
-        </ul>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <ul class="list-group">
-          <h4 class="text-center category-title"> Pedidos </h4>
-          <a routerLink="order/list-orders" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="btn btn-primary mb-3">Listar Pedidos</a>
-          <a routerLink="order/create-order" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="btn btn-primary">Criar Pedido</a>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+  
   <!-- The routed views render in the <router-outlet>-->
   <router-outlet></router-outlet>
 </div>

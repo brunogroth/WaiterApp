@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 export interface Product {
-    _id: string;
+
     name: string;
     description: string;
     imagePath: string;
@@ -10,5 +10,5 @@ export interface Product {
             name: string,
             icon: string, _id: string
         }]
-        category:string,
+    category:string,
 } 
