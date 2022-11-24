@@ -12,15 +12,20 @@
         <label for="txtprice" class="label-group">Preço </label>
         <input class="form-control" type="number" id="txtprice" [(ngModel)]="price" />
     </div>
+    <div id="imagePath" class="m-2">
+        <label for="txtimagePath" class="label-group">Imagem </label>
+        <input class="form-control" type="file" id="txtimagePath" [(ngModel)]="imagePath" />
+    </div>
     <div id="category" class="m-2">
         <label for="txtcategory" class="label-group">Categoria </label>
-        <select class="form-select" aria-label="" id="txtcategory" [(ngModel)]="category">
+        <select class="form-control" aria-label="" id="txtcategory" [(ngModel)]="category">
             <option *ngFor="let categoria of categories" value={{categoria.id}}>{{categoria.name}}</option>
         </select>
     </div>
     <div id="ingredients" class="m-2">
-        <label for="txtingredients" class="label-group">Produtos </label>
-        <h1>Implementar a lista de produtos aqui</h1>
+        <label for="txtingredients" class="label-group d-block"><strong>Ingredientes</strong></label>
+        <label>Nome: </label><input class="form-control" type="text" id="txtingredients" [(ngModel)]="ingredients" />
+        <label>Ícone: </label><input class="form-control" type="text" id="txtingredientsicon" />
     </div>
     <div id="botao" class="m-2 d-flex flex-row-reverse">
         <button id="btnCadastrar" class="btn btn-success me-3" (click)="create()">Cadastrar</button>

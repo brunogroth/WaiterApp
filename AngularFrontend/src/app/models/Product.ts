@@ -8,7 +8,7 @@ export interface Product {
     ingredients: [
         {
             name: string,
-            icon: string, _id: string
+            icon: string
         }]
     category:string,
 } 
